@@ -11,6 +11,7 @@ import { CONST_ROUTING } from './app.routing';
 import { OfficeProjectComponent } from './office-project/office-project.component';
 import { ResourceComponent } from './resource/resource.component';
 import { SharedService } from "./shared.service";
+import { AlertModule } from 'ngx-bootstrap';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { SharedService } from "./shared.service";
     FormsModule,
     HttpModule,
  
-    CONST_ROUTING
+    CONST_ROUTING,
+    AlertModule.forRoot()
     
   ],
   providers: [SharedService],
