@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  show: boolean = false;
+
   title = 'bKash Agile Project Management';
 }

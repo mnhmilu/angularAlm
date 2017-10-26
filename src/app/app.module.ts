@@ -12,6 +12,9 @@ import { OfficeProjectComponent } from './office-project/office-project.componen
 import { ResourceComponent } from './resource/resource.component';
 import { SharedService } from "./shared.service";
 import { AlertModule } from 'ngx-bootstrap';
+import { DataService } from './data.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 
 
 @NgModule({
@@ -21,7 +24,11 @@ import { AlertModule } from 'ngx-bootstrap';
 
     OfficeProjectComponent,
 
-    ResourceComponent
+    ResourceComponent,
+
+    DashboardComponent,
+
+
 
   ],
   imports: [
@@ -33,7 +40,7 @@ import { AlertModule } from 'ngx-bootstrap';
     AlertModule.forRoot()
     
   ],
-  providers: [SharedService],
+  providers: [SharedService,DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
