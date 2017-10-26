@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bKash Agile Project Management Tools';
+  title = 'bKash Agile Project Management';
 }
