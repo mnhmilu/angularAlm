@@ -7,13 +7,14 @@ import { MenuComponent } from './menu.component';
 import { Routes, RouterModule } from '@angular/router';
 import { CONST_ROUTING } from './app.routing';
 
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { OfficeProjectComponent } from './office-project/office-project.component';
 import { ResourceComponent } from './resource/resource.component';
 import { SharedService } from "./shared.service";
 import { AlertModule } from 'ngx-bootstrap';
 import { DataService } from './data.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
 
 
 
@@ -28,6 +29,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
     DashboardComponent,
 
+    BsNavbarComponent,
+
 
 
   ],
@@ -37,7 +40,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HttpModule,
  
     CONST_ROUTING,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+   NgbModule.forRoot()
     
   ],
   providers: [SharedService,DataService],
