@@ -8,9 +8,14 @@ import { Location }                 from '@angular/common';
 })
 export class ResourceComponent implements OnInit {
 
+  resources=["nahid","Kayser"]
+  
+
   constructor(
 
     private location: Location
+
+   
   ) { }
 
   ngOnInit() {
