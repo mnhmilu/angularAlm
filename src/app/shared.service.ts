@@ -16,6 +16,9 @@ export class SharedService {
  
     findWeather(city, state) { 
         this.totReqsMade = this.totReqsMade + 1; 
+
+        var headers = new Headers();
+        headers.set("nahid", "nahid");
         return this._http.get(this.weatherURL1 + city + this.weatherURL2+ state + this.weatherURL3)
             .map(response => {
                 { return response.json() };

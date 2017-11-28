@@ -20,6 +20,8 @@ export class OfficeProjectComponent implements OnInit {
  
   ngOnInit() {
   }
+
+  
  
   callWeatherService() { 
     this._sharedService.findWeather(this.id_city, this.id_state)
@@ -35,6 +37,7 @@ export class OfficeProjectComponent implements OnInit {
       error => {
         console.log("Error. The findWeather result JSON value is as follows:");
         console.log(error);
+        
       }
       ); 
   }
