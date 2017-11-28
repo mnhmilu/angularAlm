@@ -15,6 +15,7 @@ import { AlertModule } from 'ngx-bootstrap';
 import { DataService } from './data.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
+import { ExampleFormComponent } from './example-form/example-form.component';
 
 
 
@@ -22,27 +23,21 @@ import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
   declarations: [
     AppComponent,
     MenuComponent,
-
     OfficeProjectComponent,
-
     ResourceComponent,
-
     DashboardComponent,
-
     BsNavbarComponent,
-
-
+    ExampleFormComponent,
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
- 
     CONST_ROUTING,
     AlertModule.forRoot(),
    NgbModule.forRoot()
-    
+ 
   ],
   providers: [SharedService,DataService],
   bootstrap: [AppComponent]
