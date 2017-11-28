@@ -7,9 +7,8 @@ import { DataService } from '../data.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
+  
   projects;
-
 
   constructor(dataService:DataService) {
 
