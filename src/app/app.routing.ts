@@ -3,6 +3,7 @@ import { OfficeProjectComponent } from "./office-project/office-project.componen
 import {ResourceComponent} from "./resource/resource.component";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {ExampleFormComponent} from './example-form/example-form.component';
+import {DataTableExampleComponent} from './data-table-example/data-table-example.component';
 
 
 const MAINMENU_ROUTES: Routes = [
@@ -11,7 +12,8 @@ const MAINMENU_ROUTES: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'project', component: OfficeProjectComponent },
     { path: 'resource',component: ResourceComponent},
-    { path: 'formExample',component:ExampleFormComponent }
+    { path: 'formExample',component:ExampleFormComponent },
+    { path: 'dataTableExample',component:DataTableExampleComponent }
     
   
 ];

@@ -16,6 +16,8 @@ import { DataService } from './data.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
 import { ExampleFormComponent } from './example-form/example-form.component';
+import { DataTableExampleComponent } from './data-table-example/data-table-example.component';
+import { DataTableModule } from 'angular-4-data-table/src/index';
 
 
 
@@ -28,6 +30,7 @@ import { ExampleFormComponent } from './example-form/example-form.component';
     DashboardComponent,
     BsNavbarComponent,
     ExampleFormComponent,
+    DataTableExampleComponent,
 
   ],
   imports: [
@@ -36,7 +39,8 @@ import { ExampleFormComponent } from './example-form/example-form.component';
     HttpModule,
     CONST_ROUTING,
     AlertModule.forRoot(),
-   NgbModule.forRoot()
+   NgbModule.forRoot(),
+   DataTableModule 
  
   ],
   providers: [SharedService,DataService],

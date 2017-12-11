@@ -7,23 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExampleFormComponent implements OnInit {
 
-  contactMethods=[{id:1,name:'Email'},
-{id:2,name:'Fax'}
-]
+  contactMethods = [{ id: 1, name: 'Email' },
+  { id: 2, name: 'Fax' }
+  ]
   constructor() { }
 
   ngOnInit() {
   }
 
 
-  log(x)
-  {
-  //  console.log(x);
+  log(x) {
+    //  console.log(x);
 
   }
 
-  submit(x)
-  {
+  submit(x) {
     //print whole form
     console.log(x);
 
