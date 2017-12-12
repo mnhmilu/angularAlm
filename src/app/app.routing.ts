@@ -11,9 +11,10 @@ const MAINMENU_ROUTES: Routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: 'dashboard', component: DashboardComponent },
     { path: 'project', component: OfficeProjectComponent },
+    { path: 'dataTableExample',component:DataTableExampleComponent },
     { path: 'resource',component: ResourceComponent},
     { path: 'formExample',component:ExampleFormComponent },
-    { path: 'dataTableExample',component:DataTableExampleComponent }
+ 
     
   
 ];

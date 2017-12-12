@@ -28,19 +28,22 @@ import { DataTableModule } from 'angular-4-data-table/src/index';
     OfficeProjectComponent,
     ResourceComponent,
     DashboardComponent,
-    BsNavbarComponent,
+   
     ExampleFormComponent,
     DataTableExampleComponent,
+    BsNavbarComponent,
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    DataTableModule ,
     HttpModule,
     CONST_ROUTING,
+   
     AlertModule.forRoot(),
    NgbModule.forRoot(),
-   DataTableModule 
+  
  
   ],
   providers: [SharedService,DataService],

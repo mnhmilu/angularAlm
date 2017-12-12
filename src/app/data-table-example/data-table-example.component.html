@@ -1,6 +1,8 @@
 <p>
     data-table-example works!
 </p>
+
+<p><input #query (keyup)="filter(query.value)" type="text" class="form-control" placeholder="Search..."></p>
 <div style="margin: auto; max-width: 1000px; margin-bottom: 50px;">
     <data-table id="persons-grid" headerTitle="Employees" [items]="items" [itemCount]="itemCount" (reload)="reloadItems($event)" (rowClick)="rowClick($event)" (rowDoubleClick)="rowDoubleClick($event)" [rowTooltip]="rowTooltip">
         <data-table-column [property]="'name'" [header]="'Name'" [sortable]="true" [resizable]="true">
